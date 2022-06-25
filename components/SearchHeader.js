@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { MicrophoneIcon, SearchIcon, XIcon } from "@heroicons/react/solid";
 import User from "./User";
 import { useRef } from "react";
+import SearchHeaderOptions from "./SearchHeaderOptions";
 export default function SearchHeader() {
   const router = useRouter();
   const searchInputRef = useRef(null);
@@ -40,6 +41,7 @@ export default function SearchHeader() {
         </form>
         <User className="ml-auto whitespace-nowrap" />
       </div>
+      <SearchHeaderOptions />
     </header>
   );
 }
