@@ -1,6 +1,8 @@
 import Head from "next/head";
+
 import Image from "next/image";
 import Header from "../components/header";
+import Footer from "../components/Footer";
 import { SearchIcon, MicrophoneIcon } from "@heroicons/react/solid";
 export default function Home() {
   return (
@@ -29,6 +31,8 @@ export default function Home() {
           <button className="btn">Feeling Lucky</button>
         </div>
       </form>
+      {/* footer */}
+      <Footer />
     </div>
   );
 }
